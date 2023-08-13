@@ -1,0 +1,147 @@
+/* Estilos globais para o corpo do documento */
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Estilos para a barra de navegação */
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(141, 41, 2, 0.4);
+}
+
+/* Estilos para o cabeçalho */
+header {
+  color: #311b04;
+  margin: 10px;
+  /*text-align: center;*/
+  font-size: 1.5em;
+  font-weight: thin;
+  text-transform: uppercase;
+}
+
+/* Estilos para o cabeçalho do elemento com ID 'main-doc' */
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+/* Estilos para a lista não ordenada dentro da barra de navegação */
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Estilos para os itens da lista na barra de navegação */
+#navbar li {
+  color: #f88132;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+/* Estilos para os links na barra de navegação */
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #110900;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para o elemento com ID 'main-doc' */
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+  text-align: justify;
+}
+
+/* Estilos para os elementos de seção e artigo */
+section article {
+  color: #1b0e01;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+/* Estilos para os itens de lista dentro das seções */
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+/* Estilos para elementos de código */
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #fcf4e8;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Media query para telas menores (max-width: 815px) */
+@media only screen and (max-width: 815px) {
+  /* Estilos para dispositivos móveis */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  /* Estilos para a barra de navegação em telas menores */
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  /* Ajustes de margem e posição para o conteúdo principal */
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+/* Media query para telas ainda menores (max-width: 400px) */
+@media only screen and (max-width: 400px) {
+  /* Ajuste de margem para o conteúdo principal em telas muito estreitas */
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  /* Ajustes para o elemento de código em telas muito estreitas */
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 11px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
